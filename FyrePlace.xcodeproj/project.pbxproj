@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83019D7A1D2D78E800C729BF /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83019D791D2D78E800C729BF /* SocketIOManager.swift */; };
+		83019D801D2D7BBA00C729BF /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83019D7B1D2D7BBA00C729BF /* BaseCell.swift */; };
+		83019D811D2D7BBA00C729BF /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83019D7C1D2D7BBA00C729BF /* ChatCell.swift */; };
+		83019D821D2D7BBA00C729BF /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83019D7D1D2D7BBA00C729BF /* ChatCell.xib */; };
+		83019D831D2D7BBA00C729BF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83019D7E1D2D7BBA00C729BF /* UserCell.swift */; };
+		83019D841D2D7BBA00C729BF /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83019D7F1D2D7BBA00C729BF /* UserCell.xib */; };
+		83019D891D2D876A00C729BF /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83019D881D2D876A00C729BF /* ChatRoomViewController.swift */; };
+		83019D8B1D2D88AF00C729BF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83019D8A1D2D88AF00C729BF /* ChatViewController.swift */; };
+		83019D8D1D2DDB4000C729BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83019D8C1D2DDB4000C729BF /* Default-568h@2x.png */; };
+		8321ACDE1CFA2A9D00EEDFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321ACDD1CFA2A9D00EEDFD9 /* AppDelegate.swift */; };
+		8321ACE31CFA2A9D00EEDFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8321ACE11CFA2A9D00EEDFD9 /* Main.storyboard */; };
+		8321ACE51CFA2A9D00EEDFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8321ACE41CFA2A9D00EEDFD9 /* Assets.xcassets */; };
+		8321ACE81CFA2A9D00EEDFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8321ACE61CFA2A9D00EEDFD9 /* LaunchScreen.storyboard */; };
+		8321ACF31CFA2A9E00EEDFD9 /* FyrePlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321ACF21CFA2A9E00EEDFD9 /* FyrePlaceTests.swift */; };
+		83402AD01CFBB487006716ED /* Fyre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83402ACF1CFBB487006716ED /* Fyre.swift */; };
+		83402AD11CFBB487006716ED /* Fyre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83402ACF1CFBB487006716ED /* Fyre.swift */; };
+		83402AE11CFCFE9E006716ED /* FyreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321ACDF1CFA2A9D00EEDFD9 /* FyreViewController.swift */; };
+		835C9C5F1D14B94500F73535 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9C5E1D14B94500F73535 /* ProfileViewController.swift */; };
+		835C9C611D14C37A00F73535 /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9C601D14C37A00F73535 /* FriendTableViewController.swift */; };
+		835C9C631D14C5EC00F73535 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9C621D14C5EC00F73535 /* Profile.swift */; };
+		835C9C641D14C5EC00F73535 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9C621D14C5EC00F73535 /* Profile.swift */; };
+		835C9C661D15C92B00F73535 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835C9C651D15C92B00F73535 /* FriendTableViewCell.swift */; };
+		837818DA1CFF90220052368B /* FyreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837818D91CFF90220052368B /* FyreCollectionViewController.swift */; };
+		837818DC1CFF904B0052368B /* FyreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837818DB1CFF904B0052368B /* FyreCollectionViewCell.swift */; };
+		837818DE1D00EA9D0052368B /* CustomFyreFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837818DD1D00EA9D0052368B /* CustomFyreFlowLayout.swift */; };
+		839988A01D1CE070007E1F89 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399889F1D1CE070007E1F89 /* Util.swift */; };
+		839988A11D1CE070007E1F89 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399889F1D1CE070007E1F89 /* Util.swift */; };
+		83E375211D28DCB1009D910F /* NSCharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375081D28DCB1009D910F /* NSCharacterSet.swift */; };
+		83E375221D28DCB1009D910F /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375091D28DCB1009D910F /* SocketAckEmitter.swift */; };
+		83E375231D28DCB1009D910F /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3750A1D28DCB1009D910F /* SocketAckManager.swift */; };
+		83E375241D28DCB1009D910F /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3750B1D28DCB1009D910F /* SocketAnyEvent.swift */; };
+		83E375251D28DCB1009D910F /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3750C1D28DCB1009D910F /* SocketClientManager.swift */; };
+		83E375261D28DCB1009D910F /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3750D1D28DCB1009D910F /* SocketEngine.swift */; };
+		83E375271D28DCB1009D910F /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3750E1D28DCB1009D910F /* SocketEngineClient.swift */; };
+		83E375281D28DCB1009D910F /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3750F1D28DCB1009D910F /* SocketEnginePacketType.swift */; };
+		83E375291D28DCB1009D910F /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375101D28DCB1009D910F /* SocketEnginePollable.swift */; };
+		83E3752A1D28DCB1009D910F /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375111D28DCB1009D910F /* SocketEngineSpec.swift */; };
+		83E3752B1D28DCB1009D910F /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375121D28DCB1009D910F /* SocketEngineWebsocket.swift */; };
+		83E3752C1D28DCB1009D910F /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375131D28DCB1009D910F /* SocketEventHandler.swift */; };
+		83E3752D1D28DCB1009D910F /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375141D28DCB1009D910F /* SocketIOClient.swift */; };
+		83E3752E1D28DCB1009D910F /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375151D28DCB1009D910F /* SocketIOClientOption.swift */; };
+		83E3752F1D28DCB1009D910F /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375161D28DCB1009D910F /* SocketIOClientSpec.swift */; };
+		83E375301D28DCB1009D910F /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375171D28DCB1009D910F /* SocketIOClientStatus.swift */; };
+		83E375311D28DCB1009D910F /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375181D28DCB1009D910F /* SocketLogger.swift */; };
+		83E375321D28DCB1009D910F /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375191D28DCB1009D910F /* SocketPacket.swift */; };
+		83E375331D28DCB1009D910F /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3751A1D28DCB1009D910F /* SocketParsable.swift */; };
+		83E375341D28DCB1009D910F /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3751B1D28DCB1009D910F /* SocketStringReader.swift */; };
+		83E375351D28DCB1009D910F /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3751C1D28DCB1009D910F /* SocketTypes.swift */; };
+		83E375361D28DCB1009D910F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3751D1D28DCB1009D910F /* String.swift */; };
+		83E375371D28DCB1009D910F /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3751F1D28DCB1009D910F /* SSLSecurity.swift */; };
+		83E375381D28DCB1009D910F /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E375201D28DCB1009D910F /* WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8321ACEF1CFA2A9E00EEDFD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8321ACD21CFA2A9D00EEDFD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8321ACD91CFA2A9D00EEDFD9;
+			remoteInfo = FyrePlace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83019D791D2D78E800C729BF /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOManager.swift; path = FyrePlace/SocketIOManager.swift; sourceTree = "<group>"; };
+		83019D7B1D2D7BBA00C729BF /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		83019D7C1D2D7BBA00C729BF /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		83019D7D1D2D7BBA00C729BF /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		83019D7E1D2D7BBA00C729BF /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		83019D7F1D2D7BBA00C729BF /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		83019D881D2D876A00C729BF /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		83019D8A1D2D88AF00C729BF /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		83019D8C1D2DDB4000C729BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8321ACDA1CFA2A9D00EEDFD9 /* FyrePlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyrePlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8321ACDD1CFA2A9D00EEDFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FyrePlace/AppDelegate.swift; sourceTree = "<group>"; };
+		8321ACDF1CFA2A9D00EEDFD9 /* FyreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FyreViewController.swift; path = FyrePlace/FyreViewController.swift; sourceTree = "<group>"; };
+		8321ACE21CFA2A9D00EEDFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8321ACE41CFA2A9D00EEDFD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FyrePlace/Assets.xcassets; sourceTree = "<group>"; };
+		8321ACE71CFA2A9D00EEDFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8321ACE91CFA2A9D00EEDFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FyrePlace/Info.plist; sourceTree = "<group>"; };
+		8321ACEE1CFA2A9E00EEDFD9 /* FyrePlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyrePlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8321ACF21CFA2A9E00EEDFD9 /* FyrePlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyrePlaceTests.swift; sourceTree = "<group>"; };
+		8321ACF41CFA2A9E00EEDFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83402ACF1CFBB487006716ED /* Fyre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fyre.swift; path = FyrePlace/Fyre.swift; sourceTree = "<group>"; };
+		835C9C5E1D14B94500F73535 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = FyrePlace/ProfileViewController.swift; sourceTree = "<group>"; };
+		835C9C601D14C37A00F73535 /* FriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTableViewController.swift; path = FyrePlace/FriendTableViewController.swift; sourceTree = "<group>"; };
+		835C9C621D14C5EC00F73535 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = FyrePlace/Profile.swift; sourceTree = "<group>"; };
+		835C9C651D15C92B00F73535 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTableViewCell.swift; path = FyrePlace/FriendTableViewCell.swift; sourceTree = "<group>"; };
+		837818D91CFF90220052368B /* FyreCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FyreCollectionViewController.swift; path = FyrePlace/FyreCollectionViewController.swift; sourceTree = "<group>"; };
+		837818DB1CFF904B0052368B /* FyreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FyreCollectionViewCell.swift; path = FyrePlace/FyreCollectionViewCell.swift; sourceTree = "<group>"; };
+		837818DD1D00EA9D0052368B /* CustomFyreFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomFyreFlowLayout.swift; path = FyrePlace/CustomFyreFlowLayout.swift; sourceTree = "<group>"; };
+		8399889F1D1CE070007E1F89 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Util.swift; path = FyrePlace/Util.swift; sourceTree = "<group>"; };
+		83E375081D28DCB1009D910F /* NSCharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCharacterSet.swift; sourceTree = "<group>"; };
+		83E375091D28DCB1009D910F /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		83E3750A1D28DCB1009D910F /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		83E3750B1D28DCB1009D910F /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		83E3750C1D28DCB1009D910F /* SocketClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientManager.swift; sourceTree = "<group>"; };
+		83E3750D1D28DCB1009D910F /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		83E3750E1D28DCB1009D910F /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		83E3750F1D28DCB1009D910F /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		83E375101D28DCB1009D910F /* SocketEnginePollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePollable.swift; sourceTree = "<group>"; };
+		83E375111D28DCB1009D910F /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		83E375121D28DCB1009D910F /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		83E375131D28DCB1009D910F /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		83E375141D28DCB1009D910F /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		83E375151D28DCB1009D910F /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		83E375161D28DCB1009D910F /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		83E375171D28DCB1009D910F /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		83E375181D28DCB1009D910F /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		83E375191D28DCB1009D910F /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		83E3751A1D28DCB1009D910F /* SocketParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParsable.swift; sourceTree = "<group>"; };
+		83E3751B1D28DCB1009D910F /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		83E3751C1D28DCB1009D910F /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		83E3751D1D28DCB1009D910F /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		83E3751F1D28DCB1009D910F /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		83E375201D28DCB1009D910F /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8321ACD71CFA2A9D00EEDFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8321ACEB1CFA2A9E00EEDFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83019D851D2D7BDD00C729BF /* FyrePlace */ = {
+			isa = PBXGroup;
+			children = (
+				8321ACDC1CFA2A9D00EEDFD9 /* Custom Cells */,
+				8321ACDD1CFA2A9D00EEDFD9 /* AppDelegate.swift */,
+				83019D881D2D876A00C729BF /* ChatRoomViewController.swift */,
+				83019D8A1D2D88AF00C729BF /* ChatViewController.swift */,
+				8321ACDF1CFA2A9D00EEDFD9 /* FyreViewController.swift */,
+				83019D791D2D78E800C729BF /* SocketIOManager.swift */,
+				83402ACF1CFBB487006716ED /* Fyre.swift */,
+				837818D91CFF90220052368B /* FyreCollectionViewController.swift */,
+				837818DB1CFF904B0052368B /* FyreCollectionViewCell.swift */,
+				8321ACE11CFA2A9D00EEDFD9 /* Main.storyboard */,
+				835C9C601D14C37A00F73535 /* FriendTableViewController.swift */,
+				835C9C651D15C92B00F73535 /* FriendTableViewCell.swift */,
+				8399889F1D1CE070007E1F89 /* Util.swift */,
+				837818DD1D00EA9D0052368B /* CustomFyreFlowLayout.swift */,
+				835C9C621D14C5EC00F73535 /* Profile.swift */,
+				835C9C5E1D14B94500F73535 /* ProfileViewController.swift */,
+				8321ACE41CFA2A9D00EEDFD9 /* Assets.xcassets */,
+				8321ACE61CFA2A9D00EEDFD9 /* LaunchScreen.storyboard */,
+				8321ACE91CFA2A9D00EEDFD9 /* Info.plist */,
+			);
+			name = FyrePlace;
+			sourceTree = "<group>";
+		};
+		8321ACD11CFA2A9D00EEDFD9 = {
+			isa = PBXGroup;
+			children = (
+				83019D8C1D2DDB4000C729BF /* Default-568h@2x.png */,
+				83E375071D28DCB1009D910F /* Source */,
+				83019D851D2D7BDD00C729BF /* FyrePlace */,
+				8321ACF11CFA2A9E00EEDFD9 /* FyrePlaceTests */,
+				8321ACDB1CFA2A9D00EEDFD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8321ACDB1CFA2A9D00EEDFD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8321ACDA1CFA2A9D00EEDFD9 /* FyrePlace.app */,
+				8321ACEE1CFA2A9E00EEDFD9 /* FyrePlaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8321ACDC1CFA2A9D00EEDFD9 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83019D7B1D2D7BBA00C729BF /* BaseCell.swift */,
+				83019D7C1D2D7BBA00C729BF /* ChatCell.swift */,
+				83019D7D1D2D7BBA00C729BF /* ChatCell.xib */,
+				83019D7E1D2D7BBA00C729BF /* UserCell.swift */,
+				83019D7F1D2D7BBA00C729BF /* UserCell.xib */,
+			);
+			name = "Custom Cells";
+			path = FyrePlace;
+			sourceTree = "<group>";
+		};
+		8321ACF11CFA2A9E00EEDFD9 /* FyrePlaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				8321ACF21CFA2A9E00EEDFD9 /* FyrePlaceTests.swift */,
+				8321ACF41CFA2A9E00EEDFD9 /* Info.plist */,
+			);
+			path = FyrePlaceTests;
+			sourceTree = "<group>";
+		};
+		83E375071D28DCB1009D910F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				83E375081D28DCB1009D910F /* NSCharacterSet.swift */,
+				83E375091D28DCB1009D910F /* SocketAckEmitter.swift */,
+				83E3750A1D28DCB1009D910F /* SocketAckManager.swift */,
+				83E3750B1D28DCB1009D910F /* SocketAnyEvent.swift */,
+				83E3750C1D28DCB1009D910F /* SocketClientManager.swift */,
+				83E3750D1D28DCB1009D910F /* SocketEngine.swift */,
+				83E3750E1D28DCB1009D910F /* SocketEngineClient.swift */,
+				83E3750F1D28DCB1009D910F /* SocketEnginePacketType.swift */,
+				83E375101D28DCB1009D910F /* SocketEnginePollable.swift */,
+				83E375111D28DCB1009D910F /* SocketEngineSpec.swift */,
+				83E375121D28DCB1009D910F /* SocketEngineWebsocket.swift */,
+				83E375131D28DCB1009D910F /* SocketEventHandler.swift */,
+				83E375141D28DCB1009D910F /* SocketIOClient.swift */,
+				83E375151D28DCB1009D910F /* SocketIOClientOption.swift */,
+				83E375161D28DCB1009D910F /* SocketIOClientSpec.swift */,
+				83E375171D28DCB1009D910F /* SocketIOClientStatus.swift */,
+				83E375181D28DCB1009D910F /* SocketLogger.swift */,
+				83E375191D28DCB1009D910F /* SocketPacket.swift */,
+				83E3751A1D28DCB1009D910F /* SocketParsable.swift */,
+				83E3751B1D28DCB1009D910F /* SocketStringReader.swift */,
+				83E3751C1D28DCB1009D910F /* SocketTypes.swift */,
+				83E3751D1D28DCB1009D910F /* String.swift */,
+				83E3751E1D28DCB1009D910F /* WebSocket */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		83E3751E1D28DCB1009D910F /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				83E3751F1D28DCB1009D910F /* SSLSecurity.swift */,
+				83E375201D28DCB1009D910F /* WebSocket.swift */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8321ACD91CFA2A9D00EEDFD9 /* FyrePlace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8321ACF71CFA2A9E00EEDFD9 /* Build configuration list for PBXNativeTarget "FyrePlace" */;
+			buildPhases = (
+				8321ACD61CFA2A9D00EEDFD9 /* Sources */,
+				8321ACD71CFA2A9D00EEDFD9 /* Frameworks */,
+				8321ACD81CFA2A9D00EEDFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FyrePlace;
+			productName = FyrePlace;
+			productReference = 8321ACDA1CFA2A9D00EEDFD9 /* FyrePlace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8321ACED1CFA2A9E00EEDFD9 /* FyrePlaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8321ACFA1CFA2A9E00EEDFD9 /* Build configuration list for PBXNativeTarget "FyrePlaceTests" */;
+			buildPhases = (
+				8321ACEA1CFA2A9E00EEDFD9 /* Sources */,
+				8321ACEB1CFA2A9E00EEDFD9 /* Frameworks */,
+				8321ACEC1CFA2A9E00EEDFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8321ACF01CFA2A9E00EEDFD9 /* PBXTargetDependency */,
+			);
+			name = FyrePlaceTests;
+			productName = FyrePlaceTests;
+			productReference = 8321ACEE1CFA2A9E00EEDFD9 /* FyrePlaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8321ACD21CFA2A9D00EEDFD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Steven Zhang";
+				TargetAttributes = {
+					8321ACD91CFA2A9D00EEDFD9 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LYF3SE82Z5;
+					};
+					8321ACED1CFA2A9E00EEDFD9 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LYF3SE82Z5;
+						TestTargetID = 8321ACD91CFA2A9D00EEDFD9;
+					};
+				};
+			};
+			buildConfigurationList = 8321ACD51CFA2A9D00EEDFD9 /* Build configuration list for PBXProject "FyrePlace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8321ACD11CFA2A9D00EEDFD9;
+			productRefGroup = 8321ACDB1CFA2A9D00EEDFD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8321ACD91CFA2A9D00EEDFD9 /* FyrePlace */,
+				8321ACED1CFA2A9E00EEDFD9 /* FyrePlaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8321ACD81CFA2A9D00EEDFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8321ACE81CFA2A9D00EEDFD9 /* LaunchScreen.storyboard in Resources */,
+				83019D821D2D7BBA00C729BF /* ChatCell.xib in Resources */,
+				8321ACE51CFA2A9D00EEDFD9 /* Assets.xcassets in Resources */,
+				8321ACE31CFA2A9D00EEDFD9 /* Main.storyboard in Resources */,
+				83019D841D2D7BBA00C729BF /* UserCell.xib in Resources */,
+				83019D8D1D2DDB4000C729BF /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8321ACEC1CFA2A9E00EEDFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8321ACD61CFA2A9D00EEDFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83019D801D2D7BBA00C729BF /* BaseCell.swift in Sources */,
+				83402AD01CFBB487006716ED /* Fyre.swift in Sources */,
+				83E375241D28DCB1009D910F /* SocketAnyEvent.swift in Sources */,
+				83E375331D28DCB1009D910F /* SocketParsable.swift in Sources */,
+				83E375261D28DCB1009D910F /* SocketEngine.swift in Sources */,
+				835C9C611D14C37A00F73535 /* FriendTableViewController.swift in Sources */,
+				83402AE11CFCFE9E006716ED /* FyreViewController.swift in Sources */,
+				835C9C661D15C92B00F73535 /* FriendTableViewCell.swift in Sources */,
+				83019D831D2D7BBA00C729BF /* UserCell.swift in Sources */,
+				83E375231D28DCB1009D910F /* SocketAckManager.swift in Sources */,
+				837818DA1CFF90220052368B /* FyreCollectionViewController.swift in Sources */,
+				8321ACDE1CFA2A9D00EEDFD9 /* AppDelegate.swift in Sources */,
+				83E375221D28DCB1009D910F /* SocketAckEmitter.swift in Sources */,
+				83E375301D28DCB1009D910F /* SocketIOClientStatus.swift in Sources */,
+				83E375381D28DCB1009D910F /* WebSocket.swift in Sources */,
+				83E375341D28DCB1009D910F /* SocketStringReader.swift in Sources */,
+				83E375281D28DCB1009D910F /* SocketEnginePacketType.swift in Sources */,
+				837818DE1D00EA9D0052368B /* CustomFyreFlowLayout.swift in Sources */,
+				83E375321D28DCB1009D910F /* SocketPacket.swift in Sources */,
+				83E3752C1D28DCB1009D910F /* SocketEventHandler.swift in Sources */,
+				83E3752B1D28DCB1009D910F /* SocketEngineWebsocket.swift in Sources */,
+				83E3752F1D28DCB1009D910F /* SocketIOClientSpec.swift in Sources */,
+				839988A01D1CE070007E1F89 /* Util.swift in Sources */,
+				83E375251D28DCB1009D910F /* SocketClientManager.swift in Sources */,
+				83019D811D2D7BBA00C729BF /* ChatCell.swift in Sources */,
+				83E375271D28DCB1009D910F /* SocketEngineClient.swift in Sources */,
+				83E375371D28DCB1009D910F /* SSLSecurity.swift in Sources */,
+				83019D891D2D876A00C729BF /* ChatRoomViewController.swift in Sources */,
+				835C9C5F1D14B94500F73535 /* ProfileViewController.swift in Sources */,
+				83E375351D28DCB1009D910F /* SocketTypes.swift in Sources */,
+				835C9C631D14C5EC00F73535 /* Profile.swift in Sources */,
+				837818DC1CFF904B0052368B /* FyreCollectionViewCell.swift in Sources */,
+				83E375211D28DCB1009D910F /* NSCharacterSet.swift in Sources */,
+				83E3752D1D28DCB1009D910F /* SocketIOClient.swift in Sources */,
+				83019D7A1D2D78E800C729BF /* SocketIOManager.swift in Sources */,
+				83E375311D28DCB1009D910F /* SocketLogger.swift in Sources */,
+				83E3752E1D28DCB1009D910F /* SocketIOClientOption.swift in Sources */,
+				83019D8B1D2D88AF00C729BF /* ChatViewController.swift in Sources */,
+				83E375361D28DCB1009D910F /* String.swift in Sources */,
+				83E375291D28DCB1009D910F /* SocketEnginePollable.swift in Sources */,
+				83E3752A1D28DCB1009D910F /* SocketEngineSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8321ACEA1CFA2A9E00EEDFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8321ACF31CFA2A9E00EEDFD9 /* FyrePlaceTests.swift in Sources */,
+				835C9C641D14C5EC00F73535 /* Profile.swift in Sources */,
+				83402AD11CFBB487006716ED /* Fyre.swift in Sources */,
+				839988A11D1CE070007E1F89 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8321ACF01CFA2A9E00EEDFD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8321ACD91CFA2A9D00EEDFD9 /* FyrePlace */;
+			targetProxy = 8321ACEF1CFA2A9E00EEDFD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8321ACE11CFA2A9D00EEDFD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8321ACE21CFA2A9D00EEDFD9 /* Base */,
+			);
+			name = Main.storyboard;
+			path = FyrePlace;
+			sourceTree = "<group>";
+		};
+		8321ACE61CFA2A9D00EEDFD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8321ACE71CFA2A9D00EEDFD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = FyrePlace;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8321ACF51CFA2A9E00EEDFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8321ACF61CFA2A9E00EEDFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8321ACF81CFA2A9E00EEDFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FyrePlace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.szhang.FyrePlace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8321ACF91CFA2A9E00EEDFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FyrePlace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.szhang.FyrePlace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8321ACFB1CFA2A9E00EEDFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FyrePlaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.szhang.FyrePlaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FyrePlace.app/FyrePlace";
+			};
+			name = Debug;
+		};
+		8321ACFC1CFA2A9E00EEDFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FyrePlaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.szhang.FyrePlaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FyrePlace.app/FyrePlace";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8321ACD51CFA2A9D00EEDFD9 /* Build configuration list for PBXProject "FyrePlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8321ACF51CFA2A9E00EEDFD9 /* Debug */,
+				8321ACF61CFA2A9E00EEDFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8321ACF71CFA2A9E00EEDFD9 /* Build configuration list for PBXNativeTarget "FyrePlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8321ACF81CFA2A9E00EEDFD9 /* Debug */,
+				8321ACF91CFA2A9E00EEDFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8321ACFA1CFA2A9E00EEDFD9 /* Build configuration list for PBXNativeTarget "FyrePlaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8321ACFB1CFA2A9E00EEDFD9 /* Debug */,
+				8321ACFC1CFA2A9E00EEDFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8321ACD21CFA2A9D00EEDFD9 /* Project object */;
+}
